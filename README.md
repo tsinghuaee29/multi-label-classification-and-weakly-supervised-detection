@@ -10,9 +10,9 @@ PyTorch implementation of
 
 ## Datasets
 
-The
+Download our PascalVOC dataset from [here](https://cloud.tsinghua.edu.cn/d/e53b38fbb9854d0792ff/)
 
-
+and place it with the folder WSDDN and ML_GCN
 
 
 
@@ -39,12 +39,15 @@ and place them in `\ML_GCN\checkpoint\`like this:
 
 ### WSDDN
 
-Download the pretrained models for `WSDDN` from [here]()
+Download the dataset for `WSDDN` from [here](https://cloud.tsinghua.edu.cn/d/371c68e3eb594cac85e5/)
 
-and place them in `\ML_GCN\checkpoint\`like this:
+and place them in `\WSDDN`like this:
 
 ```
-
+-data
+	-dataset
+	-EdgeBoxesMat (you should unzip EdgeBoxesMat.zip first)
+	-repo
 ```
 
 
