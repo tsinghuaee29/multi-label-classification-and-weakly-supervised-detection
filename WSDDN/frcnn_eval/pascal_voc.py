@@ -21,7 +21,7 @@ class voc_eval_kit(imdb):
         self._image_set = image_set
         self.path = root
         self._class_to_ind = {}
-        for line in open(os.path.join(root, 'PascalVOC/categories.txt')):
+        for line in open(os.path.join('../PascalVOC/categories.txt')):
             s = re.split(' ', line)
             self._class_to_ind[s[1]] = int(s[0])
         self._image_ext = '.jpg'
@@ -36,7 +36,7 @@ class voc_eval_kit(imdb):
         filename = 'det_' + self._image_set + '_{:s}.txt'
         path = os.path.join(
             self.path,
-            'repo_cut',
+            'repo',
             'results')
         if not os.path.exists(path):
             os.makedirs(path)
