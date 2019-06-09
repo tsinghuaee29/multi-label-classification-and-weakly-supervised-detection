@@ -39,7 +39,7 @@ and place them in `\ML_GCN\checkpoint\`like this:
 
 ### WSDDN
 
-Download the dataset for `WSDDN` from [here](https://cloud.tsinghua.edu.cn/d/371c68e3eb594cac85e5/)
+Download the checkpoints and extra data for `WSDDN` from [here](https://cloud.tsinghua.edu.cn/d/371c68e3eb594cac85e5/)
 
 and place them in `\WSDDN`like this:
 
@@ -71,7 +71,6 @@ Then follow the instructions in the README.md under the two folders!
 This project is based on
 
 * https://github.com/chenzhaomin123/ML_GCN 
-
 * <https://github.com/jacobgil/pytorch-grad-cam>
 * https://github.com/deneb2016/WSDDN.pytorch
 
