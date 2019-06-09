@@ -5,7 +5,7 @@ from voc import *
 import os
 
 parser = argparse.ArgumentParser(description='WILDCAT Training')
-parser.add_argument('data', metavar='../data',
+parser.add_argument('data', metavar='../PascalVOC/',
                     help='path to dataset (e.g. data/')
 parser.add_argument('--image-size', '-i', default=224, type=int,
                     metavar='N', help='image size (default: 224)')
