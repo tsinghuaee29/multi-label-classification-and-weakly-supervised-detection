@@ -23,13 +23,13 @@ class VOCLoader:
     def __init__(self, root, name, min_prop_scale=20):
         self.items = []
         self.name_to_index = {}
-        for line in open(os.path.join(root, 'PascalVOC/categories.txt')):
+        for line in open(os.path.join('../PascalVOC/categories.txt')):
             s = re.split(' ', line)
             self.name_to_index[s[1]] = int(s[0])
         print('Our VOC dataset loading...')
 
 
-        for line in open(os.path.join(root, 'PascalVOC/annotations.txt')):
+        for line in open(os.path.join('../PascalVOC/annotations.txt')):
             data = {}
             s = re.split(' ', line)
             year = int(s[0][0:4])
@@ -46,7 +46,7 @@ class VOCLoader:
 
             data['id'] = id
             data['categories'] = np.array(category_set, np.long)
-            data['img_path'] = os.path.join(root, 'PascalVOC/JPEGImages', id + '.jpg')
+            data['img_path'] = os.path.join('../PascalVOC/JPEGImages', id + '.jpg')
             self.items.append(data)
         for img_dict in self.items:
             prop = loadmat(os.path.join(root, 'EdgeBoxesMat', img_dict['id'] + '.mat'))
