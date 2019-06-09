@@ -12,9 +12,17 @@ PyTorch implementation of
 
 Download our PascalVOC dataset from [here](https://cloud.tsinghua.edu.cn/d/e53b38fbb9854d0792ff/)
 
-and place it with the folder WSDDN and ML_GCN
+unzip the `.zip` file into `/data` and arrange the codes and data like this:
 
-
+```
+-ML_GCN
+-WSDDN
+-data
+	-JPEGImages
+	-annotations.txt
+	-bonus_ground_truth.txt
+	-categories.txt
+```
 
 ## Pretrained models
 
