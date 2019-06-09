@@ -68,7 +68,7 @@ def voc_eval(detpath,
     # cachedir caches the annotations in a pickle file
     npos = 0
     gt_boxes = {}
-    for line in open(os.path.join(annopath, 'PascalVOC/bonus_ground_truth.txt')):
+    for line in open(os.path.join('../PascalVOC/bonus_ground_truth.txt')):
         s = re.split(' ', line)
         cls = int(s[1])
         if (cls != classname):
