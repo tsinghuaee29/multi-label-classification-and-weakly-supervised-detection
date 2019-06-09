@@ -27,13 +27,13 @@ Please, install the following packages
 
 ### Train 
 ```sh
-python3 ML_GCN.py ../data --lr 0.02  --image-size 448 --batch-size 20 --epochs 100 --which_model resnet
+python3 ML_GCN.py ../PascalVOC --lr 0.02  --image-size 448 --batch-size 20 --epochs 100 --which_model resnet
 ```
 
 ### Test
 
 ```sh
-python3 ML_GCN.py ../data  --image-size 448 --batch-size 10 --epochs 80  --resume checkpoint/2012voc/resnet/model_best.pth.tar --which_model resnet -e 
+python3 ML_GCN.py ../PascalVOC  --image-size 448 --batch-size 10 --epochs 80  --resume checkpoint/2012voc/resnet/model_best.pth.tar --which_model resnet -e 
 ```
 
 
