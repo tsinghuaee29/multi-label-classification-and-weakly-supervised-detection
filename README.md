@@ -17,7 +17,7 @@ unzip the `.zip` file into `/data` and arrange the codes and data like this:
 ```
 -ML_GCN
 -WSDDN
--data
+-PascalVOC
 	-JPEGImages
 	-annotations.txt
 	-bonus_ground_truth.txt
