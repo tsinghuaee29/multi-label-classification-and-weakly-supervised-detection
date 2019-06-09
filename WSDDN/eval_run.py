@@ -28,8 +28,8 @@ from sklearn.metrics import accuracy_score
 
 def parse_args():
     parser = argparse.ArgumentParser(description='Eval')
-    parser.add_argument('--save_dir', help='directory to load model and save detection results', default="../repo_cut")
-    parser.add_argument('--data_dir', help='directory to load data', default='..', type=str)
+    parser.add_argument('--save_dir', help='directory to load model and save detection results', default="./data/repo")
+    parser.add_argument('--data_dir', help='directory to load data', default='./data', type=str)
 
     parser.add_argument('--prop_method', help='ss or eb', default='eb', type=str)
     parser.add_argument('--use_prop_score', help='the mode to use prop_score', default=0, type=int)
@@ -105,7 +105,7 @@ def eval():
     #    all_boxes[cls][image] = N x 5 array of detections in
     #    (x1, y1, x2, y2, score)
     all_boxes = [[[] for _ in range(num_images)] for _ in range(20)]
-    anno_path = os.path.join(args.data_dir, 'PascalVOC/annotations.txt')
+    anno_path = os.path.join('../PascalVOC/annotations.txt')
     _, cla_gt = load_gt(gt_file = anno_path)
      
     for index in range(len(test_dataset)):
@@ -198,7 +198,7 @@ def eval():
     eval_kit = voc_eval_kit('test', '2007_2008', os.path.join(args.data_dir))
     eval_kit.evaluate_detections(all_boxes, test_img_ids)
     
-def load_gt(gt_file = './annotations.txt'):
+def load_gt(gt_file = '../PascalVOC/annotations.txt'):
     test_set = ['2007', '2008']
     train_set = ['2009', '2010', '2011', '2012']
     lines = open(gt_file, 'r').readlines()
