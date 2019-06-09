@@ -82,3 +82,8 @@ This project is based on
 * <https://github.com/jacobgil/pytorch-grad-cam>
 * https://github.com/deneb2016/WSDDN.pytorch
 
+#### contact
+This github ID is registered only for the course project, so we may not check the issues(if any) frequently. So feel free to contact us through email if you have any problems about the codes!
+`wutong` : wutong16@mails.tsinghua.edu.cn
+`lijiayu`: lijiayu16@mails.tsinghua.edu.cn
+`wuqian` : wqa16@mails.tsinghua.edu.cn
