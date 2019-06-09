@@ -45,9 +45,9 @@ and place them in `\WSDDN`like this:
 
 ```
 -data
-	-dataset
+	-dataset (you should unzip dataset.zip first)
 	-EdgeBoxesMat (you should unzip EdgeBoxesMat.zip first)
-	-repo
+	-repo (you should unzip repo.zip first)
 ```
 
 
