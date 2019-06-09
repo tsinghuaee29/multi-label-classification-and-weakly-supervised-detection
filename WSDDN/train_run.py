@@ -26,8 +26,8 @@ def parse_args():
     parser.add_argument('--epochs', dest='max_epochs', help='number of epochs', default=20, type=int)
     parser.add_argument('--disp_interval', help='number of iterations to display loss', default=1000, type=int)
     parser.add_argument('--save_interval', dest='save_interval', help='number of epochs to save', default=5, type=int)
-    parser.add_argument('--save_dir', help='directory to save models', default="../repo_cut/wsddn")
-    parser.add_argument('--data_dir', help='directory to load data', default='../', type=str)
+    parser.add_argument('--save_dir', help='directory to save models', default="./data/repo/wsddn")
+    parser.add_argument('--data_dir', help='directory to load data', default='./data', type=str)
 
     parser.add_argument('--prop_method', help='ss or eb', default='eb', type=str)
     parser.add_argument('--use_prop_score', help='the mode to use pro_score', default=0, type=int)
